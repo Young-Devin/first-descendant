@@ -1,0 +1,185 @@
+.container {
+  display: flex;
+  position: relative;
+}
+.container .imageBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.container .playerCard {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: gray;
+  color: white;
+  width: 35vw;
+  height: 12vh;
+  margin: 2rem;
+  left: 55vw;
+}
+.container .playerCard .level {
+  display: flex;
+  background-color: rgb(64, 64, 64);
+  height: 100%;
+  width: 40%;
+  border-right: 1px solid;
+  justify-content: center;
+  align-items: center;
+}
+.container .playerCard .level img {
+  padding-left: 0.5rem;
+}
+.container .playerCard .level p {
+  font-size: 30px;
+  font-weight: 800;
+}
+.container .playerCard .playCardContent {
+  width: 100%;
+  margin: 0 0 2rem 2rem;
+}
+.container .playerCard .playCardContent .name {
+  font-size: 30px;
+}
+.container .playerCard .playCardContent .platformName {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+.container .playerCard .playCardContent h2 {
+  margin-bottom: 0.3rem !important;
+}
+.container .startButtonContainer {
+  display: flex;
+  position: relative;
+  left: 30vw;
+  top: 70vh;
+}
+.container .startButtonContainer button {
+  background-color: rgb(255, 128, 0);
+  color: white;
+  width: 25rem;
+  height: 8rem;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  font-weight: 700;
+}
+.container .startButtonContainer button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 146, 0);
+}
+.container .gameIcons {
+  display: flex;
+  position: absolute;
+  left: 5vw;
+  top: 70vh;
+}
+.container .gameIcons .icon {
+  font-size: 60px;
+  background-color: rgba(64, 64, 64, 0.6);
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+.container .gameIcons .icon:hover {
+  cursor: pointer;
+  background-color: rgba(64, 64, 64, 0.8);
+}
+.container .footer {
+  display: flex;
+  position: fixed;
+  background-color: rgb(64, 64, 64);
+  width: 100vw;
+  height: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding: 1rem 0 0 0;
+}
+.container .footer .icon {
+  color: white;
+  font-size: 30px;
+  padding-right: 1rem;
+}
+.container .footer span {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.container .footer span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container .characterSelection {
+  display: flex;
+  position: fixed;
+  height: 25vh;
+  background-color: rgba(64, 64, 64, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container .characterSelection .characterContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  margin: 0 2rem;
+}
+.container .characterSelection .character {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .characterSelection .character img {
+  display: flex;
+  position: absolute;
+  width: 8vw;
+  height: 7.8rem;
+}
+.container .characterSelection .character .charLevel {
+  display: flex;
+  position: relative;
+  font-size: 24px;
+  color: gold;
+  justify-content: space-between;
+}
+.container .characterSelection .character .charLevel .icon {
+  position: relative;
+  color: green;
+}
+.container .characterSelection .character .charName {
+  display: flex;
+  position: relative;
+  width: 8vw;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(64, 64, 64, 0.8);
+  color: white;
+  font-weight: 500;
+}
+.container .characterSelection .character:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.blurPage {
+  display: block;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}/*# sourceMappingURL=home.css.map */

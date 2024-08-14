@@ -100,6 +100,84 @@
                 background-color: rgba(64, 64, 64, 0.8);
             }
         }
+
+        .specEventContainer {
+            display: flex;
+            position: absolute;
+            background-color: rgba(64, 64, 64, 0.5);
+            top: -9vh;
+            
+            .specEventContent {
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                padding: 1rem;
+            }
+        }
+
+        .supportContainer {
+            position: absolute;
+            background-color: rgba(64, 64, 64, 0.8);
+            border: 1px solid white;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            width: 35rem;
+            top: -17.5vh;
+
+            .supportTitle {
+                padding: 0.5rem;
+            }
+
+            .supportContentContainer {
+                display: flex;
+                border-top: 0.5px solid white;
+
+                .supportImage {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 1rem;
+                    margin: 0.3rem;
+                    border-right: 0.5px solid white;
+
+                    .icon {
+                        background-color: rgba(64, 64, 64, 0);
+                    }
+                }
+
+                .supportContentInfo {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    
+
+                    .supportContentDetails {
+                        padding: 1.5rem;
+                    }
+
+                    .moreDetails {
+                        display: flex;
+                        justify-content: right;
+                        align-items: right;
+                        padding: 0 1rem;
+
+                        .icon {
+                            font-size: 24px;
+                            padding: 0;
+                            margin-right: 0;
+                            background-color: rgba(64, 64, 64, 0);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: rgba(64, 64, 64, 0.9);
+                border: 3px solid white;
+                cursor: pointer;
+            }
+        }
      }
 
      .footer {
@@ -198,6 +276,8 @@
             }
         }
      }
+
+     
 }
 
 .blurPage {

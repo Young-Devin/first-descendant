@@ -88,6 +88,71 @@
   cursor: pointer;
   background-color: rgba(64, 64, 64, 0.8);
 }
+.container .gameIcons .specEventContainer {
+  display: flex;
+  position: absolute;
+  background-color: rgba(64, 64, 64, 0.5);
+  top: -9vh;
+}
+.container .gameIcons .specEventContainer .specEventContent {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 1rem;
+}
+.container .gameIcons .supportContainer {
+  position: absolute;
+  background-color: rgba(64, 64, 64, 0.8);
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  width: 35rem;
+  top: -17.5vh;
+}
+.container .gameIcons .supportContainer .supportTitle {
+  padding: 0.5rem;
+}
+.container .gameIcons .supportContainer .supportContentContainer {
+  display: flex;
+  border-top: 0.5px solid white;
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  margin: 0.3rem;
+  border-right: 0.5px solid white;
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportImage .icon {
+  background-color: rgba(64, 64, 64, 0);
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportContentInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportContentInfo .supportContentDetails {
+  padding: 1.5rem;
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportContentInfo .moreDetails {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding: 0 1rem;
+}
+.container .gameIcons .supportContainer .supportContentContainer .supportContentInfo .moreDetails .icon {
+  font-size: 24px;
+  padding: 0;
+  margin-right: 0;
+  background-color: rgba(64, 64, 64, 0);
+}
+.container .gameIcons .supportContainer:hover {
+  background-color: rgba(64, 64, 64, 0.9);
+  border: 3px solid white;
+  cursor: pointer;
+}
 .container .footer {
   display: flex;
   position: fixed;

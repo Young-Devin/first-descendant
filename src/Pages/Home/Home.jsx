@@ -36,7 +36,7 @@ function Home() {
     }
 
     const NavigateToCharPage = () => {
-        navigate('/character');
+        navigate('/Character');
     }
 
     const toggleAncmtMenu = () => {
@@ -73,7 +73,6 @@ function Home() {
     }
 
     const characterClicked = (charId) => {       
-            console.log(charId)
             setCharacterDefault(charId)
         
     }

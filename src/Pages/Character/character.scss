@@ -1,0 +1,210 @@
+.container {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+
+    .imageBackground {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+     }
+     .leftPanel {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 90vh;
+        width: 25vw;
+        padding: 0rem 1rem;
+        margin: 0 0 0 2rem;
+
+        .characterPicContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 32vh;
+            width: 100%;
+            padding: 1rem 0rem;
+            border-bottom: 1px solid white;
+
+            .characterTitle {
+                display: flex;
+
+                .characterLevelIcon {
+                    display: flex;
+                    position: relative;
+
+                    .icon {
+                        display: flex;
+                        font-size: 48px;
+                        color: gray;
+                    }
+
+                    .characterLvl {
+                        display: flex;
+                        position: absolute;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: white;
+                        left: 0.725rem;
+                        top: 0.5rem;
+                        
+                    }
+
+                }
+
+                .characterName {
+                    display: flex;
+                    position: relative;
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: white;
+                    padding: 0 0 0 1rem;
+                }
+            }
+
+            .characterPic {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                object-fit: cover;
+
+                img {
+                    display: flex;
+                    position: relative;
+                    height: 20vh;
+                }
+            }
+
+            .characterSkills {
+                display: flex;
+                position: relative;
+                gap: 1.5rem;
+                padding: 2rem 0 0 0;
+                justify-content: center;
+
+                .icon {
+                    font-size: 30px;
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        
+        .characterDetailsContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 1rem 0.5rem 0 0;
+            margin: 1rem -0.5rem 0 0;
+            border-right: 1px solid white;
+
+            .characterDetailsTitle {
+                display: flex;
+                position: relative;
+                font-size: 26px;
+                color: white;
+                border-left: 5px solid white;
+                padding: 0 0 0 0.5rem;
+            }
+
+            .characterStats {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 1rem 0 0.5rem 0;
+
+                div {
+                    display: flex;
+                    color: white;
+                    background-color: rgba(64, 64, 64, 0.8);
+                    padding: 0.1rem 0;
+                    margin: 0.1rem 0;
+                    justify-content: space-between;
+                }
+            }
+
+            .skillDesc {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+
+                div {
+                    color: gold;
+                    border-top: 1px solid gold;
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+
+
+     }
+
+     .rightPanel {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 90vh;
+        width: 65vw;
+        padding: 0rem 1rem;
+        margin: 0 0 0 1rem;
+        border: 1px solid white;
+
+        .myCharacterModsContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            height: 40vh;
+            width: 50vw;
+            border-bottom: 1px solid white;
+            padding: 1rem 0rem;
+
+            .modsRow1 {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-row-gap: 20px;
+                width: 100%;
+
+                .modules {
+                    display: flex;
+                    height: 17.5vh;
+                    width: 7.5vw;
+                    border: 1px solid white;
+                    color: white;
+                    background-color: rgba(64, 64, 64, 1);
+                }
+            }
+        }
+
+        .allModulesContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            height: 40vh;
+            padding: 1rem 0rem;
+
+            .modsRow {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                //grid-column-gap: 0px;
+                grid-row-gap: 10px;
+                width: 100%;  
+            }
+
+            .modules {
+                display: flex;
+                height: 17.5vh;
+                width: 7.5vw;
+                border: 1px solid white;
+                color: white;
+                background-color: rgba(64, 64, 64, 1);
+            }
+        }
+     }
+     
+}

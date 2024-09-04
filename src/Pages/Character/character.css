@@ -1,0 +1,181 @@
+.container {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .imageBackground {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.container .leftPanel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+  width: 25vw;
+  padding: 0rem 1rem;
+  margin: 0 0 0 2rem;
+}
+.container .leftPanel .characterPicContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 32vh;
+  width: 100%;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid white;
+}
+.container .leftPanel .characterPicContainer .characterTitle {
+  display: flex;
+}
+.container .leftPanel .characterPicContainer .characterTitle .characterLevelIcon {
+  display: flex;
+  position: relative;
+}
+.container .leftPanel .characterPicContainer .characterTitle .characterLevelIcon .icon {
+  display: flex;
+  font-size: 48px;
+  color: gray;
+}
+.container .leftPanel .characterPicContainer .characterTitle .characterLevelIcon .characterLvl {
+  display: flex;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  left: 0.725rem;
+  top: 0.5rem;
+}
+.container .leftPanel .characterPicContainer .characterTitle .characterName {
+  display: flex;
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  padding: 0 0 0 1rem;
+}
+.container .leftPanel .characterPicContainer .characterPic {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .leftPanel .characterPicContainer .characterPic img {
+  display: flex;
+  position: relative;
+  height: 20vh;
+}
+.container .leftPanel .characterPicContainer .characterSkills {
+  display: flex;
+  position: relative;
+  gap: 1.5rem;
+  padding: 2rem 0 0 0;
+  justify-content: center;
+}
+.container .leftPanel .characterPicContainer .characterSkills .icon {
+  font-size: 30px;
+  color: white;
+}
+.container .leftPanel .characterPicContainer .characterSkills .icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .leftPanel .characterDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem 0.5rem 0 0;
+  margin: 1rem -0.5rem 0 0;
+  border-right: 1px solid white;
+}
+.container .leftPanel .characterDetailsContainer .characterDetailsTitle {
+  display: flex;
+  position: relative;
+  font-size: 26px;
+  color: white;
+  border-left: 5px solid white;
+  padding: 0 0 0 0.5rem;
+}
+.container .leftPanel .characterDetailsContainer .characterStats {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem 0 0.5rem 0;
+}
+.container .leftPanel .characterDetailsContainer .characterStats div {
+  display: flex;
+  color: white;
+  background-color: rgba(64, 64, 64, 0.8);
+  padding: 0.1rem 0;
+  margin: 0.1rem 0;
+  justify-content: space-between;
+}
+.container .leftPanel .characterDetailsContainer .skillDesc {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.container .leftPanel .characterDetailsContainer .skillDesc div {
+  color: gold;
+  border-top: 1px solid gold;
+  padding: 0.5rem 0;
+}
+.container .rightPanel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+  width: 65vw;
+  padding: 0rem 1rem;
+  margin: 0 0 0 1rem;
+  border: 1px solid white;
+}
+.container .rightPanel .myCharacterModsContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 40vh;
+  width: 50vw;
+  border-bottom: 1px solid white;
+  padding: 1rem 0rem;
+}
+.container .rightPanel .myCharacterModsContainer .modsRow1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 20px;
+  width: 100%;
+}
+.container .rightPanel .myCharacterModsContainer .modsRow1 .modules {
+  display: flex;
+  height: 17.5vh;
+  width: 7.5vw;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(64, 64, 64);
+}
+.container .rightPanel .allModulesContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 40vh;
+  padding: 1rem 0rem;
+}
+.container .rightPanel .allModulesContainer .modsRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 10px;
+  width: 100%;
+}
+.container .rightPanel .allModulesContainer .modules {
+  display: flex;
+  height: 17.5vh;
+  width: 7.5vw;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(64, 64, 64);
+}/*# sourceMappingURL=character.css.map */

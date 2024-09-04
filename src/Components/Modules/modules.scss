@@ -1,0 +1,31 @@
+.moduleContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+
+    .symbol {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skillIcon {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0 0 0;
+    }
+
+    .skillName {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .skillType {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}

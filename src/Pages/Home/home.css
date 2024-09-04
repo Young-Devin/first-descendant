@@ -138,6 +138,7 @@
 }
 .container .gameIcons .supportContainer .supportContentContainer .supportContentInfo .moreDetails {
   display: flex;
+  color: rgb(207, 199, 197);
   justify-content: right;
   align-items: right;
   padding: 0 1rem;
